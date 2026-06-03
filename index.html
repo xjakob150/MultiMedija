@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTimes | Pogledi na umetno inteligenco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+
+        /* Animacija za lepši prihod naslovne fotografije */
+        @keyframes customFadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: customFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <nav class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="#" class="font-serif text-3xl font-bold tracking-tighter text-white">
+                    MB<span class="text-blue-500">Times</span>
+                </a>
+                <div class="hidden md:flex gap-6 text-sm font-medium text-slate-300 border-l border-slate-700 pl-6">
+                    <a href="#analize" class="hover:text-blue-400 transition-colors">Družba in Analize</a>
+                    <a href="#izobrazevanje" class="hover:text-blue-400 transition-colors">Izobraževanje</a>
+                </div>
+            </div>
+            <button class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded text-sm font-semibold transition-all">
+                Naroči se
+            </button>
+        </div>
+        <div class="h-1 w-full bg-blue-600"></div>
+    </nav>
+
+    <!-- GLAVNI DOKUMENT Z OBA PRISPEVKA -->
+    <main class="max-w-4xl mx-auto my-6 md:my-10 bg-white shadow-sm border border-slate-200 rounded-xl overflow-hidden">
+        
+        <!-- ========================================== -->
+        <!-- DEL 1: DRUŽBA IN ANALIZE (Prvotni prispevek) -->
+        <!-- ========================================== -->
+        <span id="analize" class="block translate-y-[-100px]"></span>
+        <header class="px-6 py-8 md:px-16 md:py-12 bg-white">
+            <span class="text-blue-800 font-bold text-xs uppercase tracking-widest bg-blue-100 px-2.5 py-1 rounded">Tehnologija in družba</span>
+            <h1 class="text-3xl md:text-5xl font-serif font-bold text-slate-900 mt-4 mb-6 leading-tight">
+                Pogledi na umetno inteligenco in stanje na trgu dela ter izobraževanju
+            </h1>
+            <div class="flex items-center gap-4 text-sm text-slate-500 border-t border-slate-100 pt-6">
+                <span>Objavljeno: 3. junij 2026</span>
+            </div>
+        </header>
+
+        <!-- PREOBLIKOVAN IN ANIMIRAN OKVIR ZA NASLOVNO SLIKO -->
+        <div class="px-6 md:px-16 overflow-hidden">
+            <div class="animate-fade-in-up opacity-0">
+                <img src="slike/naslovna.png" alt="Naslovna fotografija" class="w-full h-48 sm:h-64 md:h-96 object-cover rounded-xl shadow-md border border-slate-200 transition-transform duration-500 hover:scale-[1.01]">
+            </div>
+        </div>
+
+        <article class="px-6 py-8 md:px-16 md:py-4 prose prose-lg max-w-none text-slate-700">
+            
+            <p class="text-lg md:text-xl font-medium text-slate-900 mb-8 md:mb-10 border-l-4 border-blue-900 pl-4 md:pl-6 bg-slate-50 py-4 rounded-r-lg">
+                Umetna inteligenca (AI) ni več le znanstvena fantastika, temveč nepogrešljiv del vsakdana, ki korenito spreminja pravila igre v gospodarstvu, izobraževanju in medosebnih odnosih.
+            </p>
+
+            <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mt-10 mb-4">1. Javnomnenjski pogled na umetno inteligenco</h2>
+            <p class="mb-4 text-sm md:text-base">
+                Sodobna družba se nahaja na prelomnici. Raziskave centra Pew Research jasno kažejo, da so Američani nad hitrim razvojem in uporabo umetne inteligence v vsakdanjem življenju bolj zaskrbljeni, kot pa navdušeni [1]. Ta previdnost ni neutemeljena; kar 53 % vprašanih odraslih izraža resno bojazen, da bo pretirana odvisnost od algoritmov poslabšala človeško sposobnost za kreativno razmišljanje [1].
+            </p>
+            <p class="mb-4 text-sm md:text-base">
+                Poleg kognitivnih vidikov javnost skrbi tudi kakovost naših odnosov. Polovica vprašanih (50 %) verjame, da bo umetna inteligenca negativno vplivala na sposobnost ustvarjanja smiselnih medosebnih vezi [1]. Raziskave med mladostniki dodatno osvetljujejo kompleksnost uporabe klepetalnikov pri vsakodnevnem šolskem delu [2]. Kljub temu ostaja določena mera pragmatične odprtosti: kar 73 % ljudi bi dovolilo, da jim umetna inteligenca pomaga pri vsakodnevnih nalogah, vendar le do določene meje [1].
+            </p>
+            <p class="mb-4 text-sm md:text-base">
+                Zanimivo je, kje ljudje potegnejo črto. Javnost močno nasprotuje vpletanju tehnologije v globoko osebne zadeve, kot sta iskanje življenjskega partnerja ali versko svetovanje [1]. Po drugi strani so ljudje precej bolj naklonjeni uporabi AI za analizo velikih količin podatkov v znanstvene ali finančne namene, kjer lahko tehnologija dejansko izboljša kakovost življenja, na primer pri napovedovanju vremena, razvoju novih zdravil ali iskanju finančnih zlorab [1].
+            </p>
+            <p class="mb-4 text-sm md:text-base">
+                Ključni izziv za prihodnost ostaja transparentnost. Večina prebivalstva si želi bistveno večga nadzora nad uporabo UI v njihovem življenju [1]. Zelo pomembno se jim zdi, da bi lahko z visoko stopnjo gotovosti (kar 76 % anketirancev) v vsakem trenutku razločili, ali so slike, videoposnetki ali besedila plod človeške ustvarjalnosti ali strojnega generiranja [1].
+            </p>
+
+            <div class="my-8 md:my-12 p-6 md:p-10 bg-slate-900 text-slate-300 rounded-xl border-b-4 border-blue-600 shadow-inner flex flex-col items-center justify-center text-center">
+                <svg class="w-6 h-6 mb-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                </svg>
+                <p class="font-medium text-sm md:text-base text-white">[ Prostor za interaktivno infografiko ]</p>
+                <p class="text-xs text-slate-400 mt-1">Interaktivni prikaz javnomnenjskih raziskav Pew Research</p>
+            </div>
+
+            <h2 class="text-2xl md:text-3xl font-serif font-bold text-slate-900 mt-10 mb-4">2. Trg dela in izobraževalna ponudba</h2>
+            <p class="mb-4 text-sm md:text-base">
+                Poročilo Evropske komisije (JRC) razkriva precejšnji razkorak med ponudbo znanja in dejanskim povpraševanjem na trgu dela. Trenutno so magistrski študijski programi na področju AI močno osredotočeni na strojno učenje (32 %) in splošno umetno inteligenco (26 %) [3]. Ta izobraževalna ponudba je močno skoncentrirana znotraj IKT sektorja, ki pokriva kar 47 % vseh magistrskih programov [3]. V slovenskem prostoru se ti trendi odražajo tudi v statističnih kazalnikih o uporabi informacijsko-komunikacijske tehnologije [4].
+            </p>
+            <p class="mb-4 text-sm md:text-base">
+                Ko pogledamo spletne oglase za delovna mesta, vidimo, da 98 % vseh razpisov, ki vključujejo vloge AI, zahteva enega izmed štirih ključnih profilov: inženiring umetne inteligence in strojnega učenja, podatkovno analitiko, podatkovni inženiring ali splošni razvoj [3]. Kljub temu, da se etika umetne inteligence že pojavlja v izobraževanju, v oglasih za delovna mesta na področju IKT v analiziranem obdobju praktično ni bila prisotna [3].
+            </p>
+
+            <hr class="my-12 border-slate-200" />
+
+            <!-- ========================================== -->
+            <!-- DEL 2: IZOBRAŽEVANJE                       -->
+            <!-- ========================================== -->
+            <span id="izobrazevanje" class="block translate-y-[-100px]"></span>
+            <div class="bg-blue-50/50 p-4 md:p-8 rounded-2xl border border-blue-100/80 mb-8">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="text-indigo-800 font-bold text-xs uppercase tracking-widest bg-indigo-100 px-2.5 py-1 rounded">Izobraževanje</span>
+                    <span class="text-xs text-slate-500 font-medium">Novinarska zvrst: Strokovni komentar</span>
+                </div>
+                
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-4 mb-4">
+                    Učilnica prihodnosti ali zaton kritičnega duha?
+                </h2>
+                <div class="text-sm text-slate-500 mb-6 font-medium">Avtor: Uredniški komentar | Izobraževalni trendi</div>
+                
+                <p class="mb-4 text-sm md:text-base leading-relaxed">
+                    Umetna inteligenca nezadržno vdira v šolski vsakdan, kar potrjujejo najnovejši podatki raziskovalnega centra Pew Research. Kar 54 % ameriških mladostnikov, starih med 13 in 17 let, priznava, da so že uporabili napredne klepetalne sisteme za neposredno pomoč pri svojih šolskih obveznostih [2]. Ta podatek jasno nakazuje, da tehnologija ni več zgolj obrobno orodje, temveč postaja osrednji steber sodobnega učenja. Kljub temu pa se nad bliskovito integracijo zgrinja senca globoke zaskrbljenosti glede dolgoročnega vpliva na razvoj osnovnih človeških veščin.
+                </p>
+
+                <!-- INTEGRIRAN MULTIMEDIJSKI ELEMENT (Slika) -->
+                <div class="my-8 rounded-xl overflow-hidden shadow-sm bg-slate-100 border border-slate-200">
+                    <div class="h-44 flex items-center justify-center p-4 text-center text-slate-400 bg-slate-50 text-xs font-mono uppercase tracking-wider">
+                        [ Prostor za generirano sliko: slike/ucilnica_ai.png ]
+                    </div>
+                    <div class="bg-white p-3 text-xs italic text-slate-500 text-center border-t border-slate-100">
+                        Uporaba generativnih orodij v šolskih klopeh odpira vprašanja o avtonomiji razmišljanja.
+                    </div>
+                </div>
+
+                <p class="mb-4 text-sm md:text-base leading-relaxed">
+                    Ko podrobneje analiziramo, za kakšne naloge učenci sploh uporabljajo te sisteme, opazimo visoko stopnjo pragmatičnosti. Največji delež mladostnikov se nanje obrača z namenom raziskovanja določenih tem (48 %), tesno pa sledi reševanje matematičnih problemov (43 %) ter urejanje in popravljanje lastnih besedil (35 %) [2]. Čeprav ti sistemi prinašajo nesporne koristi pri optimizaciji časa, javnomnenjske analize med odraslimi razkrivajo precejšen preplah. Kar 53 % vprašanih odraslih namreč meni, da bo povečana uporaba umetne inteligence opazno poslabšala človeško sposobnost za kreativno in kritično razmišljanje [1]. Skrb vzbuja dejstvo, da bi lahko pretirana odvisnost od takojšnjih odgovorov zakrnila proces samostojnega reševanja problemov.
+                </p>
+
+                <!-- VGRAJEN VIDEO ELEMENT -->
+                <div class="my-8 aspect-video bg-slate-950 rounded-xl overflow-hidden relative shadow-lg">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-400 p-6 text-center">
+                        <svg class="w-10 h-10 mb-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="text-xs uppercase tracking-widest font-mono text-slate-300">Vgrajeni video: slike/predstavitev_its.mp4</span>
+                        <p class="text-[11px] text-slate-500 mt-1">Video analiza: Razkorak med navdušenjem dijakov in zadržanostjo staršev</p>
+                    </div>
+                </div>
+
+                <p class="mb-4 text-sm md:text-base leading-relaxed">
+                    Ta razkorak postane še bolj očiten, ko soočimo poglede staršev in mladostnikov. Medtem ko se 58 % staršev sicer strinja, da je uporaba tehnologije za pomoč pri šolskem delu sprejemljiva [2], pa ostajajo izrazito nepopustljivi pri vpletanju algoritmov v osebne sfere življenja. Kar 58 % staršev ostro nasprotuje temu, da bi mladostniki iskali čustveno podporo ali nasvete pri klepetalnikih [2]. Zgodovinski podatki kažejo, da se družba upravičeno boji odtujenosti; polovica celotne populacije (50 %) je namreč prepričana, da bo širitev umetne inteligence negativno vplivala na zmožnost oblikovanja pristnih, globokih medosebnih vezi med ljudmi [1]. Izziv sodobnega šolstva zato ne bo le tehnična integracija, temveč vzpostavitev ravnovesja, ki bo tehnologijo obdržalo v vlogi pomočnika, hkrati pa zavarovalo človeško bližino in neodvisen razvoj duha.
+                </p>
+            </div>
+
+            <!-- POROČILO O PODATKOVNI VIZUALIZACIJI (Pripravljeno za Datawrapper/Flourish) -->
+            <div class="mt-8 border-t border-slate-100 pt-6">
+                <span class="text-xs font-bold text-blue-600 uppercase tracking-wider font-mono">Prihajajoča posodobitev: Podatkovna vizualizacija</span>
+                <p class="text-xs text-slate-500 mt-1">
+                    V naslednji fazi bo tukaj vgrajen interaktivni graf (pripravljen z brezplačnimi orodji Datawrapper/Flourish), ki bo temeljil izključno na realnih podatkih razmerja med ponudbo (IKT programi na 47 % magistrskih študijev) in povpraševanjem na trgu dela [3].
+                </p>
+            </div>
+
+            <!-- VIRI PODATKOV -->
+            <section class="mt-12 md:mt-16 pt-8 border-t border-slate-200">
+                <h3 class="text-lg md:text-xl font-bold mb-4 uppercase tracking-wider text-blue-900">Viri podatkov</h3>
+                <div class="space-y-3 text-xs md:text-sm text-slate-600 bg-slate-50 p-4 md:p-6 rounded-lg border border-slate-200 font-mono">
+                    <p><strong>[1]</strong> Pew Research Center (2025): <em>How Americans View AI and Its Impact on People and Society</em>.</p>
+                    <p><strong>[2]</strong> Pew Research Center (2026): <em>How Teens Use and View AI</em>.</p>
+                    <p><strong>[3]</strong> Evropska komisija / JRC (2025): <em>AI skills supply and demand - An analysis through online job advertisements</em>.</p>
+                    <p><strong>[4]</strong> Statistični urad RS (2026): <em>Uporaba IKT pri posameznikih (SiStat)</em>.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="text-center py-8 md:py-12 text-slate-500 text-xs md:text-sm border-t border-slate-200 bg-white">
+        <p>&copy; 2026 MBTimes. Vse pravice pridržane.</p>
+    </footer>
+
+</body>
+</html>
